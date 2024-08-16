@@ -4,8 +4,10 @@
 # Object files
 *.o
 *.ko
-*.obj
+**/obj
+**/Properties
 *.elf
+
 
 # Linker output
 *.ilk
@@ -41,6 +43,7 @@
 *.su
 *.idb
 *.pdb
+
 
 # Kernel Module Compile Results
 *.mod*
