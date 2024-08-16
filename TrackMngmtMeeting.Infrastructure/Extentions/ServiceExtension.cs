@@ -21,6 +21,7 @@ namespace TrackMngmtMeeting.Infrastructure.Extentions
 			services.AddScoped<IUnitOfWork, UnitOfWork>();
 			services.AddScoped<IMeetingRepository, CMeetingRepository>();
 			services.AddScoped<IMeetingItemRepository, CMeetingItemRepository>();
+			services.AddScoped<IMeetingItemHistoryRepository, CMeetingItemHistoryRepository>();
 			services.AddScoped<IMeetingService, MeetingService>();
 			services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

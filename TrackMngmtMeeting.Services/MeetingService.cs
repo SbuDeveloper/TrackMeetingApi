@@ -48,11 +48,15 @@ namespace TrackMngmtMeeting.Services
 
         public async Task<bool> UpdateMeetingItemStatus(UpdateMeetingItemStatusRequest request)
         {
-            var meetingItem = await _unitOfWork._meetingItem.GetById(request.Id);
+            var meetingItem = await _unitOfWork._meetingItem.GetById(request.MeetingItemId);
             if(meetingItem != null)
             {
-                meetingItem.StatusId = request.statusDto.Id;
-                _unitOfWork._meetingItem.Update(meetingItem);
+                meetingItem.StatusId = request.StatusId;
+                meetingItem.UpdatedOn = DateTime.Now;
+                 _unitOfWork._meetingItem.Update(meetingItem);
+
+                var history = _mapper.Map<UpdateMeetingItemStatusRequest, MeetingItemHistory>(request);
+                await _unitOfWork._meetingItemHistory.Add(history);
                 var result =_unitOfWork.Save();
                 if(result > 0)
                 {

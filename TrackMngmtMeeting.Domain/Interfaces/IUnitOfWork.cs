@@ -10,6 +10,7 @@ namespace TrackMngmtMeeting.Domain.Interfaces
     {
         IMeetingRepository _meeting { get; }
         IMeetingItemRepository _meetingItem { get; }
+        IMeetingItemHistoryRepository _meetingItemHistory { get; }
         int Save();
     }
 }

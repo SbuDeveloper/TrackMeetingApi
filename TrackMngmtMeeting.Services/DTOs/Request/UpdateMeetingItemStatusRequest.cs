@@ -7,7 +7,7 @@ namespace TrackMngmtMeeting.Services.DTOs.Request
 {
     public class UpdateMeetingItemStatusRequest
     {
-        public int Id { get; set; }
-        public StatusDto? statusDto { get; set; }
+        public int MeetingItemId { get; set; }
+        public int StatusId { get; set; }
     }
 }

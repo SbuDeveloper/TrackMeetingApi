@@ -12,7 +12,7 @@ namespace TrackMngmtMeeting.Domain.BaseEntity
 		[Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		public TKey? Id { get; set; }
 		public DateTime CreatedOn { get; init; } = DateTime.UtcNow;
-		public DateTime UpdatedOn { get; init; } = DateTime.UtcNow;
+		public DateTime UpdatedOn { get; set; } = DateTime.UtcNow;
 		public bool IsActive { get; set; } = true;
 		public bool Deleted { get; set; } = false;
 

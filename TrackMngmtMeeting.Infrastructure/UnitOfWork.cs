@@ -14,14 +14,17 @@ namespace TrackMngmtMeeting.Infrastructure
 
         public IMeetingItemRepository _meetingItem { get; }
 
-        public UnitOfWork(TrackMngmtMeetingDbContext dbContext, IMeetingRepository meetingRepository, IMeetingItemRepository meetingItemRepository)
+        public IMeetingItemHistoryRepository _meetingItemHistory { get; }
+
+        public UnitOfWork(TrackMngmtMeetingDbContext dbContext, IMeetingRepository meetingRepository, IMeetingItemRepository meetingItemRepository, IMeetingItemHistoryRepository meetingItemHistory)
         {
             _dbContext = dbContext;
             _meeting = meetingRepository;
             _meetingItem = meetingItemRepository;
+            _meetingItemHistory = meetingItemHistory;
 
-        }
-        public void Dispose()
+            }
+            public void Dispose()
         {
             Dispose(true);
 			GC.SuppressFinalize(this);
