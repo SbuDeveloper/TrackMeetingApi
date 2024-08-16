@@ -1,0 +1,34 @@
+
+[
+	{
+		"Id": 1,
+		"Description": "Budget for financial year 2012",
+		"MeetingId": 2,
+		"StatusId": 1
+	
+	},
+	{
+		"Id": 2,
+		"Description": "Finalise SomeCompany contract",
+		"MeetingId": 1,
+		"StatusId": 1
+	},
+	{
+		"Id": 3,
+		"Description": "Asset Management System",
+		"MeetingId": 1,
+		"StatusId": 2
+	},
+	{
+		"Id": 4,
+		"Description": "Some other system",
+		"MeetingId": 1,
+		"StatusId": 3
+	},
+	{
+		"Id": 5,
+		"Description": "Another System",
+		"MeetingId": 1,
+		"StatusId": 4
+	}
+]

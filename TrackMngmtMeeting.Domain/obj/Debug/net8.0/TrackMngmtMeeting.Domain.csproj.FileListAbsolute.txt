@@ -1,0 +1,12 @@
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Domain\bin\Debug\net8.0\TrackMngmtMeeting.Domain.deps.json
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Domain\bin\Debug\net8.0\TrackMngmtMeeting.Domain.dll
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Domain\bin\Debug\net8.0\TrackMngmtMeeting.Domain.pdb
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Domain\obj\Debug\net8.0\TrackMngmtMeeting.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Domain\obj\Debug\net8.0\TrackMngmtMeeting.Domain.AssemblyInfoInputs.cache
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Domain\obj\Debug\net8.0\TrackMngmtMeeting.Domain.AssemblyInfo.cs
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Domain\obj\Debug\net8.0\TrackMngmtMeeting.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Domain\obj\Debug\net8.0\TrackMngmtMeeting.Domain.sourcelink.json
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Domain\obj\Debug\net8.0\TrackMngmtMeeting.Domain.dll
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Domain\obj\Debug\net8.0\refint\TrackMngmtMeeting.Domain.dll
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Domain\obj\Debug\net8.0\TrackMngmtMeeting.Domain.pdb
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Domain\obj\Debug\net8.0\ref\TrackMngmtMeeting.Domain.dll

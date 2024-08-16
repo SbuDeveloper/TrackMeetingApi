@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMngmtMeetings", "TrackMngmtMeetings\TrackMngmtMeetings.csproj", "{3E80005D-04CE-4961-A151-5F779D618737}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMngmtMeeting.Domain", "TrackMngmtMeeting.Domain\TrackMngmtMeeting.Domain.csproj", "{B95DB698-8A0D-48DD-9ED0-16B0E920954A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMngmtMeeting.Infrastructure", "TrackMngmtMeeting.Infrastructure\TrackMngmtMeeting.Infrastructure.csproj", "{853CC9E9-D619-4DB8-93FC-F4B6717637FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMngmtMeeting.Services", "TrackMngmtMeeting.Services\TrackMngmtMeeting.Services.csproj", "{AE71981E-6421-44F8-8130-3E0710CB17C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMngmtMeeting.App", "TrackMngmtMeeting.App\TrackMngmtMeeting.App.csproj", "{8DC514F6-819C-4404-B6A8-7660AD0145FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E80005D-04CE-4961-A151-5F779D618737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E80005D-04CE-4961-A151-5F779D618737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E80005D-04CE-4961-A151-5F779D618737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E80005D-04CE-4961-A151-5F779D618737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B95DB698-8A0D-48DD-9ED0-16B0E920954A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95DB698-8A0D-48DD-9ED0-16B0E920954A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95DB698-8A0D-48DD-9ED0-16B0E920954A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95DB698-8A0D-48DD-9ED0-16B0E920954A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853CC9E9-D619-4DB8-93FC-F4B6717637FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853CC9E9-D619-4DB8-93FC-F4B6717637FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853CC9E9-D619-4DB8-93FC-F4B6717637FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853CC9E9-D619-4DB8-93FC-F4B6717637FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE71981E-6421-44F8-8130-3E0710CB17C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE71981E-6421-44F8-8130-3E0710CB17C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE71981E-6421-44F8-8130-3E0710CB17C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE71981E-6421-44F8-8130-3E0710CB17C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC514F6-819C-4404-B6A8-7660AD0145FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC514F6-819C-4404-B6A8-7660AD0145FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC514F6-819C-4404-B6A8-7660AD0145FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC514F6-819C-4404-B6A8-7660AD0145FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

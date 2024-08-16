@@ -1,0 +1,33 @@
+[
+	{
+		"Id": 1,
+		"Description": "Resources for SomeCompany was discussed. PW advised that SomeCompany are looking for a Senior Developer and a Junior Developer",
+        "MeetingItemId": 2
+	},
+	{
+		"Id": 2,
+		"Description": "Peter to contact Employment Agencies with specifications",
+        "MeetingItemId": 2
+	},
+	{
+		"Id": 3,
+		"Description": "Project is proceeding well and will be completed on time.",
+        "MeetingItemId": 3
+	},
+	{
+		"Id": 4,
+		"Description": "Phase One is ready for testing",
+        "MeetingItemId": 3
+	},
+	{
+		"Id": 5,
+		"Description": "This system is complete and installed. Customer can be Invoiced",
+        "MeetingItemId": 4
+	},
+	{
+		"Id": 6,
+		"Description": "This System is complete and has been invoiced",
+        "MeetingItemId": 5
+	}
+	
+]

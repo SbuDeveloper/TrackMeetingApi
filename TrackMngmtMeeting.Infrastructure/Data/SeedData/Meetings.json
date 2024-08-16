@@ -1,0 +1,17 @@
+[
+	{
+		"Id": 1,
+		"Name": "M1",
+		"MeetingTypeId": 1
+	},
+	{
+		"Id": 2,
+		"Name": "F1",
+		"MeetingTypeId": 2
+	},
+	{
+		"Id": 3,
+		"Name": "PTL1",
+		"MeetingTypeId": 3
+	}
+]

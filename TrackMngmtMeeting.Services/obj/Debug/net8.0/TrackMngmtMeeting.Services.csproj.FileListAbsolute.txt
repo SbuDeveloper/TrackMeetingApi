@@ -1,0 +1,16 @@
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\bin\Debug\net8.0\TrackMngmtMeeting.Services.deps.json
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\bin\Debug\net8.0\TrackMngmtMeeting.Services.dll
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\bin\Debug\net8.0\TrackMngmtMeeting.Services.pdb
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\bin\Debug\net8.0\TrackMngmtMeeting.Domain.dll
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\bin\Debug\net8.0\TrackMngmtMeeting.Domain.pdb
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\obj\Debug\net8.0\TrackMngmtMeeting.Services.csproj.AssemblyReference.cache
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\obj\Debug\net8.0\TrackMngmtMeeting.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\obj\Debug\net8.0\TrackMngmtMeeting.Services.AssemblyInfoInputs.cache
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\obj\Debug\net8.0\TrackMngmtMeeting.Services.AssemblyInfo.cs
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\obj\Debug\net8.0\TrackMngmtMeeting.Services.csproj.CoreCompileInputs.cache
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\obj\Debug\net8.0\TrackMngmtMeeting.Services.sourcelink.json
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\obj\Debug\net8.0\TrackMng.A07C53B8.Up2Date
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\obj\Debug\net8.0\TrackMngmtMeeting.Services.dll
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\obj\Debug\net8.0\refint\TrackMngmtMeeting.Services.dll
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\obj\Debug\net8.0\TrackMngmtMeeting.Services.pdb
+C:\Users\HP-User\Documents\GitHub\Sibusiso-Nyambose\TrackMngmtMeeting.Services\obj\Debug\net8.0\ref\TrackMngmtMeeting.Services.dll
