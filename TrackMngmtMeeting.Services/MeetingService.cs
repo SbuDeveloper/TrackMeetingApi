@@ -45,5 +45,22 @@ namespace TrackMngmtMeeting.Services
             var meetingItems = await _unitOfWork._meetingItem.GetMeetingItemsAsync(MeetingTypeId);
             return _mapper.Map<IReadOnlyList<MeetingItem>, IReadOnlyList<MeetingItemsResponse>>(meetingItems);
         }
+
+        public async Task<bool> UpdateMeetingItemStatus(UpdateMeetingItemStatusRequest request)
+        {
+            var meetingItem = await _unitOfWork._meetingItem.GetById(request.Id);
+            if(meetingItem != null)
+            {
+                meetingItem.StatusId = request.statusDto.Id;
+                _unitOfWork._meetingItem.Update(meetingItem);
+                var result =_unitOfWork.Save();
+                if(result > 0)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
 }

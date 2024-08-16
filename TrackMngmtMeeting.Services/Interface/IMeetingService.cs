@@ -8,6 +8,6 @@ namespace TrackMngmtMeeting.Services.Interface
         Task<MeetingResponse> CaptureNewMeeting(CreateMeetingRequest meetingDetails);
         Task<IReadOnlyList<MeetingListResponse>> GetAllMeetings();
         Task<IReadOnlyList<MeetingItemsResponse>> GetMeetingItems(int MeeingTypeId);
-
+        Task<bool> UpdateMeetingItemStatus(UpdateMeetingItemStatusRequest request);
     }
 }
