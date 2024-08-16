@@ -10,12 +10,16 @@ namespace TrackMngmtMeeting.Infrastructure
     public class UnitOfWork : IUnitOfWork
     {
         private readonly TrackMngmtMeetingDbContext _dbContext;
-        public IMeetingRepository _meetingRepository { get; }
+        public IMeetingRepository _meeting { get; }
 
-        public UnitOfWork(TrackMngmtMeetingDbContext dbContext, IMeetingRepository meetingRepository)
+        public IMeetingItemRepository _meetingItem { get; }
+
+        public UnitOfWork(TrackMngmtMeetingDbContext dbContext, IMeetingRepository meetingRepository, IMeetingItemRepository meetingItemRepository)
         {
-            dbContext = dbContext;
-            _meetingRepository = meetingRepository;
+            _dbContext = dbContext;
+            _meeting = meetingRepository;
+            _meetingItem = meetingItemRepository;
+
         }
         public void Dispose()
         {

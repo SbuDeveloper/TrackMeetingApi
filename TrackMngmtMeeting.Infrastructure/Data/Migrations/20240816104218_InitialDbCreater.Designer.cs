@@ -11,8 +11,8 @@ using TrackMngmtMeeting.Infrastructure;
 namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(TrackMngmtMeetingDbContext))]
-    [Migration("20240815205430_ApupdateHistryTable")]
-    partial class ApupdateHistryTable
+    [Migration("20240816104218_InitialDbCreater")]
+    partial class InitialDbCreater
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -189,7 +189,7 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
                     b.HasOne("TrackMngmtMeeting.Domain.Entities.MeetingItem", "MeetingItem")
                         .WithMany("ActionItems")
                         .HasForeignKey("MeetingItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("MeetingItem");
@@ -211,7 +211,7 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
                     b.HasOne("TrackMngmtMeeting.Domain.Entities.Meeting", "Meeting")
                         .WithMany("MeetingItems")
                         .HasForeignKey("MeetingId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("TrackMngmtMeeting.Domain.Entities.Status", "Status")
@@ -230,7 +230,7 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
                     b.HasOne("TrackMngmtMeeting.Domain.Entities.MeetingItem", "MeetingItem")
                         .WithMany("MeetingItemHistory")
                         .HasForeignKey("MeetingItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("TrackMngmtMeeting.Domain.Entities.Status", "Status")

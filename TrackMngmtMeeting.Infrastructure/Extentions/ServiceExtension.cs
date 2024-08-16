@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using TrackMngmtMeeting.Domain.Interfaces;
 using TrackMngmtMeeting.Domain.Interfaces.IRepositories.IRepository;
-using TrackMngmtMeeting.Infrastructure.Repositories;
+using TrackMngmtMeeting.Infrastructure.Repositories.CRepository;
 using TrackMngmtMeeting.Services;
 using TrackMngmtMeeting.Services.Interface;
 
@@ -20,6 +20,7 @@ namespace TrackMngmtMeeting.Infrastructure.Extentions
 			});
 			services.AddScoped<IUnitOfWork, UnitOfWork>();
 			services.AddScoped<IMeetingRepository, CMeetingRepository>();
+			services.AddScoped<IMeetingItemRepository, CMeetingItemRepository>();
 			services.AddScoped<IMeetingService, MeetingService>();
 			services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

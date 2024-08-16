@@ -186,7 +186,7 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
                     b.HasOne("TrackMngmtMeeting.Domain.Entities.MeetingItem", "MeetingItem")
                         .WithMany("ActionItems")
                         .HasForeignKey("MeetingItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("MeetingItem");
@@ -208,7 +208,7 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
                     b.HasOne("TrackMngmtMeeting.Domain.Entities.Meeting", "Meeting")
                         .WithMany("MeetingItems")
                         .HasForeignKey("MeetingId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("TrackMngmtMeeting.Domain.Entities.Status", "Status")
@@ -227,7 +227,7 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
                     b.HasOne("TrackMngmtMeeting.Domain.Entities.MeetingItem", "MeetingItem")
                         .WithMany("MeetingItemHistory")
                         .HasForeignKey("MeetingItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("TrackMngmtMeeting.Domain.Entities.Status", "Status")

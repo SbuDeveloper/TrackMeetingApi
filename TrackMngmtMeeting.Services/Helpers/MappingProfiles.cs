@@ -19,11 +19,20 @@ namespace TrackMngmtMeeting.Services.Helpers
 
             CreateMap<CreateMeetingRequest, Meeting>()
                  .ForMember(s => s.MeetingItems, d => d.MapFrom(x => x.MeetingItems));
+
+            CreateMap<MeetingItemDto, MeetingItem>()
+                .ForMember(s => s.MeetingItemHistory, d => d.MapFrom(x => x.MeetingItemHistory));
            
 
             CreateMap<Meeting, MeetingListResponse>()
                 .ForMember(x => x.MeetingType, d => d.MapFrom(c => c.MeetingType.Name));
 
+
+            CreateMap<Meeting, MeetingResponse>()
+                .ForMember(x => x.MeetingType, d => d.MapFrom(c => c.MeetingType.Name))
+                .ForMember(x => x.MeetingItems, d => d.MapFrom(c => c.MeetingItems));
+
+            CreateMap<MeetingItem , MeetingItemDto>();
             CreateMap<MeetingType, MeetingTypeDto>();
             CreateMap<Status, StatusDto>();
             CreateMap<Meeting, MeetingDto>();

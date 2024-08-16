@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class ApplicationDbInitial : Migration
+    public partial class InitialDbCreater : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -82,8 +82,7 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
                         name: "FK_MeetingItems_Meetings_MeetingId",
                         column: x => x.MeetingId,
                         principalTable: "Meetings",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_MeetingItems_Statuses_StatusId",
                         column: x => x.StatusId,
@@ -112,8 +111,7 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
                         name: "FK_ActionItems_MeetingItems_MeetingItemId",
                         column: x => x.MeetingItemId,
                         principalTable: "MeetingItems",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -123,7 +121,6 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     StatusId = table.Column<int>(type: "INTEGER", nullable: false),
-                    ActionId = table.Column<int>(type: "INTEGER", nullable: false),
                     MeetingItemId = table.Column<int>(type: "INTEGER", nullable: false),
                     CreatedOn = table.Column<DateTime>(type: "TEXT", nullable: false),
                     UpdatedOn = table.Column<DateTime>(type: "TEXT", nullable: false),
@@ -134,17 +131,10 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
                 {
                     table.PrimaryKey("PK_MeetingItemHistories", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_MeetingItemHistories_ActionItems_ActionId",
-                        column: x => x.ActionId,
-                        principalTable: "ActionItems",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_MeetingItemHistories_MeetingItems_MeetingItemId",
                         column: x => x.MeetingItemId,
                         principalTable: "MeetingItems",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_MeetingItemHistories_Statuses_StatusId",
                         column: x => x.StatusId,
@@ -157,11 +147,6 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
                 name: "IX_ActionItems_MeetingItemId",
                 table: "ActionItems",
                 column: "MeetingItemId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_MeetingItemHistories_ActionId",
-                table: "MeetingItemHistories",
-                column: "ActionId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_MeetingItemHistories_MeetingItemId",
@@ -193,10 +178,10 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "MeetingItemHistories");
+                name: "ActionItems");
 
             migrationBuilder.DropTable(
-                name: "ActionItems");
+                name: "MeetingItemHistories");
 
             migrationBuilder.DropTable(
                 name: "MeetingItems");

@@ -8,7 +8,8 @@ namespace TrackMngmtMeeting.Domain.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        IMeetingRepository _meetingRepository { get; }
+        IMeetingRepository _meeting { get; }
+        IMeetingItemRepository _meetingItem { get; }
         int Save();
     }
 }

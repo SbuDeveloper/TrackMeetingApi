@@ -34,7 +34,7 @@ namespace TrackMngmtMeetings.Controllers
 
         [HttpPost]
 		[Route("captureNewMeeting")]
-		public async Task<MeetingItemsResponse> CreateNewMeeting([FromBody]CreateMeetingRequest createMeetingRequest)
+		public async Task<MeetingResponse> CreateNewMeeting([FromBody]CreateMeetingRequest createMeetingRequest)
         {
             return await _meetingService.CaptureNewMeeting(createMeetingRequest);
         }

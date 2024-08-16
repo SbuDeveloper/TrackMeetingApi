@@ -6,10 +6,8 @@ using TrackMngmtMeeting.Domain.Entities;
 
 namespace TrackMngmtMeeting.Domain.Interfaces.IRepositories.IRepository
 {
-    public interface IMeetingRepository : IGenericRepository<Meeting>
+    public interface IMeetingItemRepository : IGenericRepository<MeetingItem>
     {
-        Task<IReadOnlyList<Meeting>> GetAllMeetingsAsync();
-        Task<Meeting> GetMeetingByNameAsync(string name);
-
+        Task<IReadOnlyList<MeetingItem>> GetMeetingItemsAsync(int MeeingTypeId);
     }
 }

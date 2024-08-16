@@ -15,7 +15,8 @@ namespace TrackMngmtMeeting.Infrastructure.Data.Configuration
             builder
                 .HasMany(c => c.MeetingItems)
                 .WithOne(e => e.Meeting)
-                .OnDelete(DeleteBehavior.Cascade);
+                .HasForeignKey(x => x.MeetingId)
+                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

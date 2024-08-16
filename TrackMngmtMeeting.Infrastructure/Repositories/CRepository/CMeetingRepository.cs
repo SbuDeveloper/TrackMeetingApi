@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using TrackMngmtMeeting.Domain.Entities;
 using TrackMngmtMeeting.Domain.Interfaces.IRepositories.IRepository;
 
-namespace TrackMngmtMeeting.Infrastructure.Repositories
+namespace TrackMngmtMeeting.Infrastructure.Repositories.CRepository
 {
     public class CMeetingRepository : GenericRepository<Meeting>, IMeetingRepository
     {
@@ -18,20 +18,12 @@ namespace TrackMngmtMeeting.Infrastructure.Repositories
 
         public async Task<IReadOnlyList<Meeting>> GetAllMeetingsAsync()
         {
-            return await _applicationDbContext.Meetings
-            .Include(x => x.MeetingType)
-            .ToListAsync();
+            return await _applicationDbContext.Meetings.Include(x => x.MeetingType).ToListAsync();
         }
 
-        public async Task<IReadOnlyList<MeetingItem>> GetMeetingItemsAsync(int MeeingTypeId)
+        public async Task<Meeting> GetMeetingByNameAsync(string name)
         {
-            return await _applicationDbContext.MeetingItems
-            .Where(x => x.Meeting.MeetingType.Id == MeeingTypeId)
-            .Include(x => x.Meeting).ThenInclude(c => c.MeetingType)
-            .Include(x => x.Status)
-            .Include(x => x.ActionItems)
-            .ToListAsync();
+            return await _applicationDbContext.Meetings.Include(x => x.MeetingType).FirstOrDefaultAsync(x => x.Name == name);
         }
-
     }
 }
