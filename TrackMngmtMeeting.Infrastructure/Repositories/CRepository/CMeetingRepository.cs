@@ -25,5 +25,10 @@ namespace TrackMngmtMeeting.Infrastructure.Repositories.CRepository
         {
             return await _applicationDbContext.Meetings.Include(x => x.MeetingType).FirstOrDefaultAsync(x => x.Name == name);
         }
+
+        public async Task<IReadOnlyList<MeetingType>> GetMeetingTypesAsync()
+        {
+            return await _applicationDbContext.MeetingTypes.ToListAsync();
+        }
     }
 }

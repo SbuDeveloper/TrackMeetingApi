@@ -10,6 +10,7 @@ namespace TrackMngmtMeeting.Domain.Interfaces.IRepositories.IRepository
     {
         Task<IReadOnlyList<Meeting>> GetAllMeetingsAsync();
         Task<Meeting> GetMeetingByNameAsync(string name);
+        Task<IReadOnlyList<MeetingType>> GetMeetingTypesAsync();
 
     }
 }

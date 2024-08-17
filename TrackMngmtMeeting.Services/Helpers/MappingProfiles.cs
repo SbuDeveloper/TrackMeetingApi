@@ -47,6 +47,10 @@ namespace TrackMngmtMeeting.Services.Helpers
                 .ForMember(s => s.MeetingItemHistory, d => d.MapFrom(x => x.MeetingItemHistory));
 
             CreateMap<UpdateMeetingItemStatusRequest, MeetingItemHistory>();
+
+            CreateMap<MeetingType, MeetingTypeResopnse>();
+
+            
         }
     }
 }

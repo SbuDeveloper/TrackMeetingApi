@@ -93,8 +93,8 @@
               "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj": {
                 "projectPath": "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj"
               },
-              "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Services\\TrackMngmtMeeting.Services.csproj": {
-                "projectPath": "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Services\\TrackMngmtMeeting.Services.csproj"
+              "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Services\\TrackMngmtMeeting.Services.csproj": {
+                "projectPath": "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Services\\TrackMngmtMeeting.Services.csproj"
               }
             }
           }
@@ -153,14 +153,14 @@
         }
       }
     },
-    "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Services\\TrackMngmtMeeting.Services.csproj": {
+    "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Services\\TrackMngmtMeeting.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Services\\TrackMngmtMeeting.Services.csproj",
+        "projectUniqueName": "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Services\\TrackMngmtMeeting.Services.csproj",
         "projectName": "TrackMngmtMeeting.Services",
-        "projectPath": "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Services\\TrackMngmtMeeting.Services.csproj",
+        "projectPath": "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Services\\TrackMngmtMeeting.Services.csproj",
         "packagesPath": "C:\\Users\\HP-User\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Services\\obj\\",
+        "outputPath": "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP-User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -53,5 +53,12 @@ namespace TrackMngmtMeetings.Controllers
         {
             return await _meetingService.UpdateMeetingItemStatus(updateMeetingItemStatusRequest);
         }
+
+        [HttpGet]
+		[Route("getMeetingType")]
+		public async Task<IReadOnlyList<MeetingTypeResopnse>> GetMeetingType()
+        {
+            return await _meetingService.GetMeetingTypes();
+        }
     }
 }

@@ -46,6 +46,12 @@ namespace TrackMngmtMeeting.Services
             return _mapper.Map<IReadOnlyList<MeetingItem>, IReadOnlyList<MeetingItemsResponse>>(meetingItems);
         }
 
+        public async Task<IReadOnlyList<MeetingTypeResopnse>> GetMeetingTypes()
+        {
+            var meetingTypes = await _unitOfWork._meeting.GetMeetingTypesAsync();
+            return _mapper.Map<IReadOnlyList<MeetingType>, IReadOnlyList<MeetingTypeResopnse>>(meetingTypes);
+        }
+
         public async Task<bool> UpdateMeetingItemStatus(UpdateMeetingItemStatusRequest request)
         {
             var meetingItem = await _unitOfWork._meetingItem.GetById(request.MeetingItemId);
