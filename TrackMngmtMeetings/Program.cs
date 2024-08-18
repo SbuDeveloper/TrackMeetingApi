@@ -11,6 +11,14 @@ ConfigurationManager configuration = builder.Configuration;
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddDIServices(builder.Configuration);
 
+builder.Services.AddCors(x =>
+{
+	x.AddPolicy("CorsPolicy", policy =>
+	{
+		policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+	});
+});
+
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
@@ -26,6 +34,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("CorsPolicy");
 
 app.MapControllers();
 
