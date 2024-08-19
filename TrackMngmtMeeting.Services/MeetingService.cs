@@ -1,6 +1,7 @@
 using AutoMapper;
 using TrackMngmtMeeting.Domain.Entities;
 using TrackMngmtMeeting.Domain.Interfaces;
+using TrackMngmtMeeting.Services.DTOs;
 using TrackMngmtMeeting.Services.DTOs.Request;
 using TrackMngmtMeeting.Services.DTOs.Response;
 using TrackMngmtMeeting.Services.Interface;
@@ -21,6 +22,14 @@ namespace TrackMngmtMeeting.Services
         {
             if (meetingDetails != null)
 			{
+                foreach (var item in meetingDetails.MeetingItems)
+                {
+                   item.MeetingItemHistory.Add(new MeetingItemHistoryDto()
+                   {
+                     StatusId = item.StatusId
+                   });
+                }
+                
                 var meeting = _mapper.Map<CreateMeetingRequest, Meeting>(meetingDetails);
 				await _unitOfWork._meeting.Add(meeting);
 				var result = _unitOfWork.Save();

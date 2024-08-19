@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrackMngmtMeetings")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b48ece28b521194abf15d9c4f30220d01abb9fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88779b7f5a410d8ff9b9dacf40624d50889a5ffc")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrackMngmtMeetings")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrackMngmtMeetings")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

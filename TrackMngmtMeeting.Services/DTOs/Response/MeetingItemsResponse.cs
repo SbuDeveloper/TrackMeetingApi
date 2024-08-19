@@ -4,9 +4,9 @@ namespace TrackMngmtMeeting.Services.DTOs.Response
     {
         public int Id { get; set; }
         public string Description { get; set; } = string.Empty;
-        public string? MeetingType { get; set; }
-        public string? Meeting { get; set; }
-        public string? Status { get; set; }
+        public int StatusId { get; set; }
+        public MeetingDto? Meeting { get; set; }
+        public StatusDto? Status { get; set; }
         public ICollection<ActionItemDto>? ActionItems { get; set; }
         public virtual ICollection<MeetingItemHistoryDto>? MeetingItemHistory { get; set; }
     }
