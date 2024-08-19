@@ -15,8 +15,8 @@ namespace TrackMngmtMeeting.Infrastructure.Extentions
         {
             services.AddDbContext<TrackMngmtMeetingDbContext>(options =>
 			{
-				//options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
 				options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+				//options.UseSqlite(configuration.GetConnectionString("DefaultConnection"));
 			});
 			services.AddScoped<IUnitOfWork, UnitOfWork>();
 			services.AddScoped<IMeetingRepository, CMeetingRepository>();
