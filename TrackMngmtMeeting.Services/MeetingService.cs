@@ -29,7 +29,7 @@ namespace TrackMngmtMeeting.Services
                      StatusId = item.StatusId
                    });
                 }
-                
+
                 var meeting = _mapper.Map<CreateMeetingRequest, Meeting>(meetingDetails);
 				await _unitOfWork._meeting.Add(meeting);
 				var result = _unitOfWork.Save();
@@ -59,6 +59,18 @@ namespace TrackMngmtMeeting.Services
         {
             var meetingTypes = await _unitOfWork._meeting.GetMeetingTypesAsync();
             return _mapper.Map<IReadOnlyList<MeetingType>, IReadOnlyList<MeetingTypeResopnse>>(meetingTypes);
+        }
+
+        public async Task<IReadOnlyList<StatusResopnse>> GetStatusAsync()
+        {
+            var statuses = await _unitOfWork._meeting.GetStatusAsync();
+            return _mapper.Map<IReadOnlyList<Status>, IReadOnlyList<StatusResopnse>>(statuses);
+        }
+
+        public async Task<MeetingResponse> MeetingByMeetingType(int MeetingTypeId)
+        {
+            var meeting = await _unitOfWork._meeting.MeetingByMeetingTypeIdAsync(MeetingTypeId);
+            return _mapper.Map<Meeting, MeetingResponse>(meeting);
         }
 
         public async Task<bool> UpdateMeetingItemStatus(UpdateMeetingItemStatusRequest request)

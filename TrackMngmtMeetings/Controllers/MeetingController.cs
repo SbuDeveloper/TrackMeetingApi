@@ -1,11 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.Extensions.Logging;
 using TrackMngmtMeeting.Domain.Entities;
 using TrackMngmtMeeting.Services.DTOs.Request;
 using TrackMngmtMeeting.Services.DTOs.Response;
@@ -47,6 +40,14 @@ namespace TrackMngmtMeetings.Controllers
 
         }
 
+        [HttpGet]
+		[Route("getMeeting")]
+		public async Task<MeetingResponse> GetMeetingByMeetingTypeId(int MeetingTypeId)
+        {
+            return await _meetingService.MeetingByMeetingType(MeetingTypeId);
+
+        }
+
         [HttpPost]
 		[Route("updateMeetingItemStatus")]
 		public async Task<bool> UpdateMeetingItemStatus([FromBody]UpdateMeetingItemStatusRequest updateMeetingItemStatusRequest)
@@ -59,6 +60,13 @@ namespace TrackMngmtMeetings.Controllers
 		public async Task<IReadOnlyList<MeetingTypeResopnse>> GetMeetingType()
         {
             return await _meetingService.GetMeetingTypes();
+        }
+
+        [HttpGet]
+		[Route("getStatus")]
+		public async Task<IReadOnlyList<StatusResopnse>> GetStatus()
+        {
+            return await _meetingService.GetStatusAsync();
         }
     }
 }

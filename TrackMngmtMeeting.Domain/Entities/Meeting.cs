@@ -11,7 +11,7 @@ namespace TrackMngmtMeeting.Domain.Entities
         public string Name { get; set; } = string.Empty;
         public int MeetingTypeId { get; set; }
         public virtual MeetingType? MeetingType { get; set; }
-        public virtual List<MeetingItem>? MeetingItems { get; set; } = new List<MeetingItem>();
+        public virtual List<MeetingItem>? MeetingItems { get; set; }
 
     }
 }

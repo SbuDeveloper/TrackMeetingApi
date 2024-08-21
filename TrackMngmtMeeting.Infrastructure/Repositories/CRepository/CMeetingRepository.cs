@@ -20,6 +20,16 @@ namespace TrackMngmtMeeting.Infrastructure.Repositories.CRepository
         {
             return await _applicationDbContext.Meetings.Include(x => x.MeetingType).ToListAsync();
         }
+        
+        public async Task<Meeting> MeetingByMeetingTypeIdAsync(int meetingTypeId)
+        {
+            return await _applicationDbContext.Meetings
+            .Include(x => x.MeetingItems).ThenInclude(x => x.Status)
+            .Include(x => x.MeetingItems).ThenInclude(p => p.ActionItems)
+            .Include(x => x.MeetingType)
+            .OrderBy(x => x.Id)
+            .LastOrDefaultAsync(x => x.MeetingTypeId == meetingTypeId);
+        }
 
         public async Task<Meeting> GetMeetingByNameAsync(string name)
         {
@@ -29,6 +39,11 @@ namespace TrackMngmtMeeting.Infrastructure.Repositories.CRepository
         public async Task<IReadOnlyList<MeetingType>> GetMeetingTypesAsync()
         {
             return await _applicationDbContext.MeetingTypes.ToListAsync();
+        }
+
+        public async Task<IReadOnlyList<Status>> GetStatusAsync()
+        {
+            return await _applicationDbContext.Statuses.ToListAsync();
         }
     }
 }

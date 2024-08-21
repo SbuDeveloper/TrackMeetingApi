@@ -11,6 +11,8 @@ namespace TrackMngmtMeeting.Domain.Interfaces.IRepositories.IRepository
         Task<IReadOnlyList<Meeting>> GetAllMeetingsAsync();
         Task<Meeting> GetMeetingByNameAsync(string name);
         Task<IReadOnlyList<MeetingType>> GetMeetingTypesAsync();
+        Task<IReadOnlyList<Status>> GetStatusAsync();
+        Task<Meeting> MeetingByMeetingTypeIdAsync(int meetingTypeId);
 
     }
 }

@@ -1,8 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
 using TrackMngmtMeeting.Infrastructure;
 using TrackMngmtMeeting.Infrastructure.Extentions;
-using TrackMngmtMeeting.Services.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
