@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrackMngmtMeetings")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9699e9a20c6a84387ee5b3f31f0f95cefe846671")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+214e102e16d279516d97e27531e91638e112cf8c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrackMngmtMeetings")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrackMngmtMeetings")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
