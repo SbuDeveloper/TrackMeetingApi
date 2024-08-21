@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TBuR6KpUkbA=",
+  "dgSpecHash": "LKYo4BG0oW4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeetings\\TrackMngmtMeetings.csproj",
+  "projectFilePath": "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeetings\\TrackMngmtMeetings.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP-User\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\HP-User\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

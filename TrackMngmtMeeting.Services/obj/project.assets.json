@@ -250,8 +250,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj": {
-              "projectPath": "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj"
+            "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj": {
+              "projectPath": "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj"
             }
           }
         }

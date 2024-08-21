@@ -24,10 +24,11 @@ namespace TrackMngmtMeeting.Services
 			{
                 foreach (var item in meetingDetails.MeetingItems)
                 {
-                   item.MeetingItemHistory.Add(new MeetingItemHistoryDto()
-                   {
-                     StatusId = item.StatusId
-                   });
+                    item.Status = null;
+                    item.MeetingItemHistory.Add(new MeetingItemHistoryDto()
+                    {
+                        StatusId = item.StatusId
+                    });
                 }
 
                 var meeting = _mapper.Map<CreateMeetingRequest, Meeting>(meetingDetails);

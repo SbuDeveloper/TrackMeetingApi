@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj": {}
+    "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj": {
+    "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj",
+        "projectUniqueName": "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj",
         "projectName": "TrackMngmtMeeting.Domain",
-        "projectPath": "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj",
+        "projectPath": "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\TrackMngmtMeeting.Domain.csproj",
         "packagesPath": "C:\\Users\\HP-User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\obj\\",
+        "outputPath": "c:\\Users\\HP-User\\Documents\\GitHub\\Sibusiso-Nyambose\\TrackMngmtMeeting.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP-User\\AppData\\Roaming\\NuGet\\NuGet.Config",

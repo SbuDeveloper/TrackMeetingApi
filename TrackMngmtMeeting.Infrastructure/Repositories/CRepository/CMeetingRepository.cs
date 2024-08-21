@@ -33,7 +33,10 @@ namespace TrackMngmtMeeting.Infrastructure.Repositories.CRepository
 
         public async Task<Meeting> GetMeetingByNameAsync(string name)
         {
-            return await _applicationDbContext.Meetings.Include(x => x.MeetingType).FirstOrDefaultAsync(x => x.Name == name);
+            return await _applicationDbContext.Meetings
+            .Include(x => x.MeetingType)
+            .Include(s => s.MeetingItems).ThenInclude(c => c.Status)
+            .FirstOrDefaultAsync(x => x.Name == name);
         }
 
         public async Task<IReadOnlyList<MeetingType>> GetMeetingTypesAsync()
