@@ -1,0 +1,12 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP.NET Core service.
+
+version: '3.4'
+
+services:
+  trackmngmtmeetings:
+    image: trackmngmtmeetings
+    build:
+      context: .
+      dockerfile: TrackMngmtMeetings/Dockerfile
+    ports:
+      - 5240:5240
